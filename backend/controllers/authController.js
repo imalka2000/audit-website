@@ -25,7 +25,7 @@ exports.login = async (req, res, next) => {
 };
 
 // GET /api/auth/bootstrap
-// Ensures that admin user exists using ADMIN_EMAIL & ADMIN_PASSWORD from .env
+// Ensures an admin user exists using ADMIN_EMAIL & ADMIN_PASSWORD from .env
 exports.bootstrapAdmin = async (req, res, next) => {
   try {
     const email = process.env.ADMIN_EMAIL;
