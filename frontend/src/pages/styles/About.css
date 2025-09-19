@@ -1,0 +1,10 @@
+.about-page .hero { display:flex; gap:1rem; align-items:center; padding:1rem; }
+.hero-right img { width:260px; height:160px; object-fit:cover; border-radius:8px; }
+
+.pill-list { display:flex; gap:0.6rem; margin-top:1rem; flex-wrap:wrap; }
+.pill { background:#eef2ff; color:#16246a; padding:0.45rem 0.8rem; border-radius:999px; font-weight:600; }
+
+@media (max-width:900px) {
+  .about-page .hero { flex-direction: column; }
+  .hero-right img { width:100%; height:200px; }
+}

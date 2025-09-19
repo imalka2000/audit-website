@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../api/api';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default function AdminBlogs() {
   const [blogs, setBlogs] = useState([]);
@@ -45,7 +43,6 @@ export default function AdminBlogs() {
 
   return (
     <>
-      <Header />
       <main className="container" style={{ paddingTop: 18 }}>
         <h1>Manage Blogs</h1>
         <div style={{ display: 'flex', gap: 12 }}>
@@ -87,7 +84,6 @@ export default function AdminBlogs() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

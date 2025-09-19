@@ -1,0 +1,16 @@
+.services-page .page-hero {
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  padding:1.25rem;
+}
+.hero-left { flex:1; }
+.hero-right img { width: 220px; height:120px; object-fit:cover; border-radius:8px; }
+
+.why .why-list { margin: 0; padding-left: 1rem; }
+.why .why-list li { margin-bottom: 0.6rem; color:#374151; }
+
+@media (max-width:900px) {
+  .services-page .page-hero { flex-direction: column; }
+  .hero-right img { width:100%; height:160px; }
+}

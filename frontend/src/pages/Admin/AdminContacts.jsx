@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../api/api';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default function AdminContacts() {
   const [contacts, setContacts] = useState([]);
@@ -32,7 +30,6 @@ export default function AdminContacts() {
 
   return (
     <>
-      <Header />
       <main className="container" style={{ paddingTop: 18 }}>
         <h1>Contact Inquiries</h1>
         <div className="card">
@@ -63,7 +60,6 @@ export default function AdminContacts() {
           ) : <div className="muted">No contact inquiries</div>}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

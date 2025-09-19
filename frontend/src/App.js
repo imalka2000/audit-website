@@ -13,6 +13,8 @@ import AdminBlogs from './pages/Admin/AdminBlogs';
 import AdminClients from './pages/Admin/AdminClients';
 import AdminContacts from './pages/Admin/AdminContacts';
 import { setAuthToken } from './api/api';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function RequireAuth({ children }) {
   const token = localStorage.getItem('admin_token');
@@ -28,56 +30,64 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+      <div className="site-wrapper">
+        <Header />
 
-        <Route path="/admin/login" element={<AdminLogin />} />
-        <Route
-          path="/admin"
-          element={
-            <RequireAuth>
-              <AdminDashboard />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/admin/services"
-          element={
-            <RequireAuth>
-              <AdminServices />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/admin/blogs"
-          element={
-            <RequireAuth>
-              <AdminBlogs />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/admin/clients"
-          element={
-            <RequireAuth>
-              <AdminClients />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/admin/contacts"
-          element={
-            <RequireAuth>
-              <AdminContacts />
-            </RequireAuth>
-          }
-        />
-      </Routes>
+        <main className="site-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route
+              path="/admin"
+              element={
+                <RequireAuth>
+                  <AdminDashboard />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path="/admin/services"
+              element={
+                <RequireAuth>
+                  <AdminServices />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path="/admin/blogs"
+              element={
+                <RequireAuth>
+                  <AdminBlogs />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path="/admin/clients"
+              element={
+                <RequireAuth>
+                  <AdminClients />
+                </RequireAuth>
+              }
+            />
+            <Route
+              path="/admin/contacts"
+              element={
+                <RequireAuth>
+                  <AdminContacts />
+                </RequireAuth>
+              }
+            />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

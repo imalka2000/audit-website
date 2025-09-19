@@ -1,0 +1,11 @@
+.contact-grid { display:grid; grid-template-columns: 1fr 300px; gap:1rem; align-items:start; }
+.contact-card form { display:flex; flex-direction:column; gap:0.6rem; }
+.contact-aside .map-illus img { width:100%; height:160px; object-fit:cover; border-radius:8px; }
+.status { margin-top:0.8rem; padding:0.6rem; border-radius:8px; }
+.status.ok { background:#ecfdf5; color:#065f46; }
+.status.err { background:#fff1f2; color:#9f1239; }
+
+@media (max-width:900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-aside { order: 2; }
+}

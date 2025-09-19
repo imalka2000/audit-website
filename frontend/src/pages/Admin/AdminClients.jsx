@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../api/api';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default function AdminClients() {
   const [clients, setClients] = useState([]);
@@ -44,7 +42,6 @@ export default function AdminClients() {
 
   return (
     <>
-      <Header />
       <main className="container" style={{ paddingTop: 18 }}>
         <h1>Manage Clients</h1>
         <div style={{ display: 'flex', gap: 12 }}>
@@ -86,7 +83,6 @@ export default function AdminClients() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

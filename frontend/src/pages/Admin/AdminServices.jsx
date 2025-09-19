@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../api/api';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default function AdminServices() {
   const [services, setServices] = useState([]);
@@ -55,7 +53,6 @@ export default function AdminServices() {
 
   return (
     <>
-      <Header />
       <main className="container" style={{ paddingTop: 18 }}>
         <h1>Manage Services</h1>
 
@@ -96,7 +93,6 @@ export default function AdminServices() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

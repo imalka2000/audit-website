@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import './AdminDashboard.css';
 
 export default function AdminDashboard() {
   return (
     <>
-      <Header />
       <div className="admin-dashboard container">
         {/* Sidebar */}
         <aside className="admin-sidebar">
@@ -50,8 +47,6 @@ export default function AdminDashboard() {
           </div>
         </main>
       </div>
-
-      <Footer />
     </>
   );
 }

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import api from '../api/api';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function Clients() {
   const [clients, setClients] = useState([]);
@@ -12,7 +10,6 @@ export default function Clients() {
 
   return (
     <>
-      <Header />
       <main className="container" style={{ paddingTop: 18 }}>
         <h1>Clients</h1>
         <p className="muted">We partner with clients across industries.</p>
@@ -27,7 +24,6 @@ export default function Clients() {
           )) : <div className="card">No clients yet</div>}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

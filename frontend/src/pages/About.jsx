@@ -1,23 +1,31 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import './styles/About.css';
 
 export default function About() {
   return (
-    <>
-      <Header />
-      <main className="container" style={{ paddingTop: 18 }}>
-        <section className="card">
-          <h1>About AuditCo</h1>
-          <p className="muted">
-            AuditCo is a fictional example audit company for this technical test. We focus on financial audits, regulatory compliance, and process improvement.
-          </p>
+    <main className="about-page container">
+      <section className="hero card">
+        <div className="hero-left">
+          <h1 style={{ marginTop:0 }}>About AuditCo</h1>
+          <p className="muted">We are an independent audit firm focused on accuracy, transparency and pragmatic recommendations.</p>
+          <p>Our team combines deep accounting knowledge with experience across technology, manufacturing, and services.</p>
+        </div>
+        <div className="hero-right">
+          <img src="https://images.unsplash.com/photo-1542223616-d2bd4e7b5d3c?auto=format&fit=crop&w=900&q=60" alt="team" />
+        </div>
+      </section>
 
-          <h3 style={{ marginTop: 12 }}>Our mission</h3>
-          <p className="muted">To provide reliable audit and assurance services that help businesses grow with confidence.</p>
-        </section>
-      </main>
-      <Footer />
-    </>
+      <section className="mission card" style={{ marginTop: 18 }}>
+        <h2>Our Mission</h2>
+        <p className="muted">To provide assurance that strengthens trust between businesses and their stakeholders.</p>
+
+        <div className="pill-list">
+          <div className="pill">Integrity</div>
+          <div className="pill">Clarity</div>
+          <div className="pill">Timeliness</div>
+          <div className="pill">Actionable advice</div>
+        </div>
+      </section>
+    </main>
   );
 }

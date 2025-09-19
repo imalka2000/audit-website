@@ -84,20 +84,13 @@ footer {
   color: var(--muted);
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb;
-  color: #333;
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+.site-content {
+  flex: 1;
 }

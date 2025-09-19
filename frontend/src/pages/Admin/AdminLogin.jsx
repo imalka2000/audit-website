@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import api, { setAuthToken } from '../../api/api';
 import { useNavigate } from 'react-router-dom';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import './AdminLogin.css';
 
 export default function AdminLogin() {
@@ -26,7 +24,6 @@ export default function AdminLogin() {
 
   return (
     <div className="admin-login-page">
-      <Header />
       <main className="admin-login-main">
         <div className="login-card">
           <h1>Admin Login</h1>
@@ -49,7 +46,6 @@ export default function AdminLogin() {
           </form>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
