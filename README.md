@@ -12,6 +12,117 @@ audit-website/
 
 ---
 
+## Backend File Structure
+
+```
+backend/
+  .env
+  .gitignore
+  package.json
+  server.js
+  config/
+    db.js
+  controllers/
+    authController.js
+    blogController.js
+    clientController.js
+    contactController.js
+    serviceController.js
+  middleware/
+    authMiddleware.js
+  models/
+    Blog.js
+    Client.js
+    Contact.js
+    Service.js
+    User.js
+  routes/
+    auth.js
+    blogs.js
+    clients.js
+    contacts.js
+    services.js
+```
+
+---
+
+## Frontend File Structure
+
+```
+frontend/
+  .env
+  .gitignore
+  package.json
+  README.md
+  build/
+    asset-manifest.json
+    favicon.ico
+    index.html
+    logo192.png
+    logo512.png
+    manifest.json
+    robots.txt
+    static/
+      css/
+        main.fbde6195.css
+        main.fbde6195.css.map
+      js/
+        main.f73b4ddc.js
+        main.f73b4ddc.js.LICENSE.txt
+        main.f73b4ddc.js.map
+  public/
+    favicon.ico
+    index.html
+    logo192.png
+    logo512.png
+    manifest.json
+    robots.txt
+  src/
+    App.css
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    setupTests.js
+    api/
+      api.js
+    assets/
+    components/
+      BlogCard.jsx
+      Footer.css
+      Footer.jsx
+      Header.css
+      Header.jsx
+      ServiceCard.css
+      ServiceCard.jsx
+    pages/
+      About.jsx
+      Blogs.jsx
+      Clients.jsx
+      Contact.jsx
+      Home.jsx
+      Services.jsx
+      Admin/
+        AdminBlogs.jsx
+        AdminClients.jsx
+        AdminContacts.jsx
+        AdminDashboard.css
+        AdminDashboard.jsx
+        AdminLogin.css
+        AdminLogin.jsx
+        AdminServices.jsx
+      styles/
+        About.css
+        Blogs.css
+        Clients.css
+        Contact.css
+        Home.css
+        Services.css
+```
+
+---
+
 ## Backend (`backend/`)
 
 **Tech:** Node.js, Express, MongoDB, JWT
@@ -100,3 +211,9 @@ MIT
 ## Author
 
 AuditCo Team
+
+---
+
+<prompt>
+add backend and frontend file structure to that md file
+</prompt>
