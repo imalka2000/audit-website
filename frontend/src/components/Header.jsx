@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
@@ -12,29 +13,32 @@ export default function Header() {
   }
 
   return (
-    <header>
-      <div className="container" style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
-        <div>
-          <Link to="/" style={{ fontWeight: 700, fontSize: 18 }}>AuditCo</Link>
-          <div style={{ fontSize: 12, color: '#777' }}>Trusted audit services</div>
-        </div>
+    <header className="header">
+      {/* Left: Logo */}
+      <div className="header-left">
+        <Link to="/" className="logo">AuditCo</Link>
+        <div className="tagline">Trusted audit services</div>
+      </div>
 
-        <nav className="header-right" style={{ marginLeft: 24 }}>
-          <Link to="/services">Services</Link>
-          <Link to="/blogs">Blogs</Link>
-          <Link to="/clients">Clients</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+      {/* Center: Nav links */}
+      <nav className="header-nav">
+        <Link to="/services">Services</Link>
+        <Link to="/blogs">Blogs</Link>
+        <Link to="/clients">Clients</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
 
-          {token ? (
-            <>
-              <Link to="/admin" style={{ marginLeft: 8 }}>Admin</Link>
-              <button className="btn" onClick={logout} style={{ marginLeft: 8 }}>Logout</button>
-            </>
-          ) : (
-            <Link to="/admin/login" style={{ marginLeft: 8 }}>Admin Login</Link>
-          )}
-        </nav>
+      {/* Right: Admin/Login */}
+      <div className="header-right">
+        {token ? (
+          <>
+            <Link to="/admin" className="admin-link">Admin</Link>
+            <button className="btn-logout" onClick={logout}>Logout</button>
+          </>
+        ) : (
+          <Link to="/admin/login" className="btn-login">Login</Link>
+        )}
       </div>
     </header>
   );
