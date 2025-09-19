@@ -13,7 +13,8 @@ export default function Blogs() {
           <p className="muted">Analysis, tips, and updates about auditing, compliance and accounting best practice.</p>
         </div>
         <div className="hero-illus">
-          <img src="https://images.unsplash.com/photo-1526378726586-93c4c02f1ef3?auto=format&fit=crop&w=900&q=60" alt="insights" />
+            <img src="https://picsum.photos/id/1015/900/600" alt="insights"/>
+
         </div>
       </header>
 

@@ -14,7 +14,10 @@ export default function Services() {
           <p className="muted">From financial audit to compliance and advisory — we tailor services to your needs.</p>
         </div>
         <div className="hero-right">
-          <img src="https://images.unsplash.com/photo-1581093588401-7e0d2f7d0d07?auto=format&fit=crop&w=900&q=60" alt="services" />
+            <img 
+            src="https://picsum.photos/id/1039/900/600" 
+            alt="services" 
+            />
         </div>
       </section>
 

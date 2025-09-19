@@ -11,7 +11,10 @@ export default function About() {
           <p>Our team combines deep accounting knowledge with experience across technology, manufacturing, and services.</p>
         </div>
         <div className="hero-right">
-          <img src="https://images.unsplash.com/photo-1542223616-d2bd4e7b5d3c?auto=format&fit=crop&w=900&q=60" alt="team" />
+            <img 
+            src="https://picsum.photos/id/1027/900/600" 
+            alt="team" 
+            />
         </div>
       </section>
 

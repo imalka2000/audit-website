@@ -52,7 +52,10 @@ export default function Contact() {
           <p className="muted">Mon — Fri: 9:00 AM — 6:00 PM</p>
 
           <div className="map-illus">
-            <img src="https://images.unsplash.com/photo-1505765055090-0c9b1492c18d?auto=format&fit=crop&w=800&q=60" alt="office" />
+                <img 
+                src="https://picsum.photos/id/1041/800/600" 
+                alt="office" 
+                />
           </div>
         </aside>
       </section>
